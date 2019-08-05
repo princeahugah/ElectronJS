@@ -4,7 +4,6 @@ const StringDecoder = require('string_decoder').StringDecoder;
 const router = require('./router');
 const PORT = 80;
 const acceptedMethods = {
-  'home': ['GET'],
   'users/auth': ['POST'],
 };
 
