@@ -1,0 +1,22 @@
+{
+  "name": "ElectronJS",
+  "version": "1.0.0",
+  "description": "An electron js app",
+  "main": "./src/index.js",
+  "repository": "https://github.com/princeahugah/ElectronJS.git",
+  "author": "Prince Ahugah <prince.ahugah@outlook.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "webpack-dev-server --mode development",
+    "build": "webpack --mode production",
+    "lint": "eslint --fix --ext .js src",
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "electron": "^6.0.0",
+    "eslint": "^6.1.0",
+    "eslint-config-google": "^0.13.0",
+    "mocha": "^6.2.0"
+  }
+}
