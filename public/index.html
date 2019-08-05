@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Electronjs Challenge!</title>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li data-action="home">Home</li>
+        </ul>
+    </nav>
+    <section id="content">
+        <div class="login">
+            <div class="page-title">
+                <h4>Login</h4>
+                <span class="liner"></span>
+            </div>
+            <form id="loginForm">
+                <div class="alert"></div>
+                <div class="input-field">
+                    <span class="email has-error">Enter a valid email address</span>
+                    <input type="email" name="email" placeholder="Email Address">
+                </div>
+                <div class="input-field">
+                    <span class="password has-error">Enter a valid password</span>
+                    <input type="password" name="password" placeholder="Password" autocomplete="off">
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+        <div class="home">
+            <p class="rubberBand">Hey, your first electron app in a matter of hours!</p>
+        </div>
+    </section>
+
+    <script src="./renderer.js"></script>
+</body>
+
+</html>

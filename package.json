@@ -1,5 +1,5 @@
 {
-  "name": "ElectronJS",
+  "name": "electronjs",
   "version": "1.0.0",
   "description": "An electron js app",
   "main": "./src/index.js",
@@ -8,15 +8,19 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "dev": "webpack-dev-server --mode development",
-    "build": "webpack --mode production",
+    "server": "node ./src/server.js",
+    "start": "electron .",
     "lint": "eslint --fix --ext .js src",
     "test": "mocha"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
     "electron": "^6.0.0",
     "eslint": "^6.1.0",
     "eslint-config-google": "^0.13.0",
     "mocha": "^6.2.0"
+  },
+  "dependencies": {
+    "uuid": "^3.3.2"
   }
 }
