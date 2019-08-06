@@ -13,7 +13,7 @@ const server = http.createServer((req, res) => {
   path = path === '' ? 'home' : path;
 
   const headers = req.headers;
-  decoder = new StringDecoder('utf-8');
+  const decoder = new StringDecoder('utf-8');
 
   let body = '';
   req.on('data', (chunk) => {
@@ -32,7 +32,7 @@ const server = http.createServer((req, res) => {
       res.writeHead(200);
       res.end(JSON.stringify(response));
     } else {
-      res.writeHead(308);
+      res.writeHead(405);
       res.end();
     }
   });
