@@ -10,7 +10,7 @@ loginForm.addEventListener('submit', (e) => {
   });
 
   const headers = new Headers({
-    'Authorization': `${formData.email}:${formData.password}`,
+    'Authorization': `Basic ${formData.email}:${formData.password}`,
     'Accept': 'application/json',
   });
   const request = new Request('http://localhost:80/users/auth', {
