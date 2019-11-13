@@ -42,7 +42,5 @@ describe('Router', () => {
       assert.property(response, 'token');
       assert.deepEqual(response.code, 'SUCCESS');
     });
-
   });
 });
-
